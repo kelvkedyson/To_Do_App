@@ -1,0 +1,26 @@
+#to-do-table{
+    padding: 30px;
+    margin: 30px auto;
+    background: rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+
+nav a{
+    text-transform: uppercase;
+}
+
+.navbar-brand{
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#to-do-table li{
+    list-style: none;
+    padding: 10px;
+}
+
+#to-do-table li:hover{
+    text-decoration: line-through;
+    background: rgba(0,0,0,.2);
+}

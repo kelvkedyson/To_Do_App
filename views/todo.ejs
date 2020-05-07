@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">Kedyson</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <div class="container">
+        <h2>My To do list..</h2>
+        <div id="to-do-table">
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="item" id="addItem" placeholder="Add new item.." required/>
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary" id="submit">ADD</button>
+                    </div>
+                </div>
+            </form>
+            <ul class="list-group">
+                <% for(let i = 0; i < todos.length; i++){%>
+                    <li><%= todos[i].item %></li>
+                <%}%>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/todo-list.js"></script>
+</body>
+
+</html>
