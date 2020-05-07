@@ -16,10 +16,10 @@ todoController(app);
 //using ejs template engine
 app.set('view engine', 'ejs');
 
-//adding the dependancy manually
+//adding the dependance manually
 app.engine('ejs', require('ejs').__express);
 
 
 //listening to port 5500
-app.listen(5500);
-console.log('Listening to Port : 5500');
+app.listen(3000);
+console.log('Listening to Port : 3000');
