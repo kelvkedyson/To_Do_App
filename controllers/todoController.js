@@ -22,9 +22,8 @@ module.exports = function(app) {
     //handling DELETE requests
     app.delete('/todo/:item', (req, res) => {
         data = data.filter(function(todo) {
-            return todo.item.replace(/ /g, "-") !== req.params.item;
+            return todo.item.replace(/ /g, '-') !== req.params.item;
         });
-
         res.json(data);
     });
 };

@@ -24,6 +24,7 @@ $(document).ready(function(){
             type: "DELETE",
             url: "/todo/" + item,
             success: function (data) {
+                //do something with a fron-end framework
                 location.reload();
             }
         });
