@@ -24,3 +24,8 @@ nav a{
     text-decoration: line-through;
     background: rgba(0,0,0,.2);
 }
+
+.btn .btn-outline-danger{
+    align-content: left;
+    margin: 0 0 0 70px;
+}
